@@ -1,5 +1,5 @@
 # codes
-frequent codes to use till I learn to write them self
+frequent codes to use till I learn to write them myself
 ---
 ## rmdf
 
