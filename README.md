@@ -12,7 +12,8 @@ file.path <- "./file_folder/combined//"
 file.list <- list.files(path = file.path, pattern = "*.xlsx", full.names = T)
 df.list <- lapply(file.list, read_xlsx)
 
-present_15_30 <- rbindlist(df.list, idcol = "id", fill = F)
+present_15_30 <- rbindlist(df.list, idcol = "id", fill = F, use.names = TRUE)
+
 
 
 writexl::write_xlsx(present_15_30, "./ram_mandir/combined//present_15_30.xlsx")
